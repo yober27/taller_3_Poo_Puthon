@@ -10,7 +10,7 @@ class cliente:
 
 # crear metodos get y set por atributos
     def get_nombre(self):
-        return self.nombre_clinete
+        return self.nombre_cliente
     
     def get_apellido(self):
         return self.apellido_cliente
@@ -29,6 +29,9 @@ class cliente:
     def procesar_datos(self):
         aux = self.nombre_cliente + "" + self.apellido_cliente
 
-    def mostrar_info(self):
+    def mostrar_info_cliente(self):
         print(f"nombre cliente : {self.nombre_cliente} - apellido cliente:{self.apellido_cliente}")
+
+    def hacer_saludo(self, datosaludo):
+        print(f"{datosaludo} : {self.nombre_cliente} : {self.apellido_clienteo}")
 
